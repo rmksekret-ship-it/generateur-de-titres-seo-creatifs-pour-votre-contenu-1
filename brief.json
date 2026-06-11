@@ -1,0 +1,283 @@
+{
+  "run_id": "run-1781143446422",
+  "job_index": 1,
+  "params": {
+    "owner_user_id": "user-1774825923424-663",
+    "owner_username": "inso",
+    "owner_display_name": "Inso",
+    "count": 3,
+    "archetype": "calculator",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "",
+    "notes": "",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "external_site_request_id": "",
+    "external_client_ref": "",
+    "external_source_label": "",
+    "dashboard_mode": "builder",
+    "network_site_format": "forum",
+    "network_primary_topic": "",
+    "network_primary_geo": "",
+    "network_domain_pool": "",
+    "network_hosting_pool": "",
+    "network_dns_strategy": "auto_pool_assign",
+    "network_domain_flow": "manual",
+    "network_content_strategy": "",
+    "network_model_concept": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_seo": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_build": "google/gemini-2.5-flash",
+    "network_model_qa": "anthropic/claude-haiku-4.5",
+    "network_model_growth": "google/gemini-2.5-flash-lite:nitro",
+    "network_blueprint_id": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "provider_space_id": "new-sites",
+    "provider_space_name": "New Sites",
+    "allow_url_fallback": false,
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": false,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "calculator",
+    "archetype_mix": [
+      "calculator"
+    ]
+  },
+  "site_spec": {
+    "slug": "generateur-de-titres-seo-creatifs-pour-votre-contenu-1",
+    "theme": {
+      "name": "Ledger Slate",
+      "slug": "ledger-slate",
+      "eyebrow": "Trust Ledger",
+      "family": "ledger-slate",
+      "moods": [
+        "trustworthy",
+        "financial",
+        "dense",
+        "clear"
+      ],
+      "archetypes": [
+        "calculator",
+        "tool"
+      ],
+      "niches": [
+        "finance",
+        "insurance",
+        "budgeting",
+        "comparison",
+        "compliance"
+      ],
+      "keywords": [
+        "ledger",
+        "slate",
+        "trust",
+        "finance",
+        "clear"
+      ],
+      "token_index": [
+        "budgeting",
+        "calculator",
+        "clear",
+        "comparison",
+        "compliance",
+        "dense",
+        "finance",
+        "financial",
+        "insurance",
+        "ledger",
+        "slate",
+        "tool",
+        "trust",
+        "trustworthy"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+      "display_font": "\"Merriweather\", serif",
+      "body_font": "\"Source Sans 3\", sans-serif",
+      "layout": "split",
+      "card_style": "glass",
+      "button_style": "gradient",
+      "decor_style": "ribbons",
+      "hero_template": "1.08fr 0.92fr",
+      "seo_template": "1.18fr 0.82fr",
+      "feature_columns": 3,
+      "faq_columns": 3,
+      "hero_min_height": "78vh",
+      "panel_radius": "28px",
+      "card_radius": "26px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "16px",
+      "palette": {
+        "bg": "linear-gradient(180deg, #f8fafc 0%, #cbd5e1 100%)",
+        "surface": "rgba(255,255,255,0.92)",
+        "surface_border": "rgba(15,23,42,0.1)",
+        "text": "#0f172a",
+        "muted": "#475569",
+        "accent": "#0f766e",
+        "accent_alt": "#1d4ed8",
+        "hero_glow": "rgba(15, 118, 110, 0.12)",
+        "button_text": "#f8fafc",
+        "panel_alt": "rgba(255,255,255,0.88)",
+        "shadow": "0 22px 64px rgba(15, 23, 42, 0.08)",
+        "input_fill": "rgba(15,23,42,0.03)"
+      }
+    },
+    "structure": {
+      "name": "Bento Signal",
+      "slug": "bento-signal",
+      "hero_variant": "command",
+      "proof_variant": "badges",
+      "section_order": [
+        "proof",
+        "features",
+        "seo",
+        "faq"
+      ],
+      "feature_columns": 4,
+      "faq_columns": 2,
+      "family": "modular-grid",
+      "moods": [
+        "modular",
+        "curated",
+        "technical"
+      ],
+      "archetypes": [
+        "tool",
+        "generator",
+        "calculator"
+      ],
+      "niches": [
+        "ai tools",
+        "dashboards",
+        "productivity",
+        "research"
+      ],
+      "keywords": [
+        "bento",
+        "cards",
+        "signal",
+        "system"
+      ],
+      "token_index": [
+        "badges",
+        "bento",
+        "calculator",
+        "cards",
+        "command",
+        "curated",
+        "dashboards",
+        "faq",
+        "features",
+        "generator",
+        "grid",
+        "modular",
+        "productivity",
+        "proof",
+        "research",
+        "seo",
+        "signal",
+        "system",
+        "technical",
+        "tool",
+        "tools"
+      ]
+    },
+    "render_direction": "atlas-report",
+    "render_direction_name": "Atlas Report",
+    "page_blueprint": "signal-matrix",
+    "page_blueprint_name": "Signal Matrix",
+    "title": "Générateur de Titres SEO & Créatifs pour Votre Contenu",
+    "tagline": "Générez Vos Titres en un Instant",
+    "description": "Créez instantanément des titres percutants et optimisés pour le SEO, le marketing ou vos réseaux sociaux. Outil gratuit pour journalistes, marketeurs et créateurs de contenu en France.",
+    "feature_prefix": "Bloc",
+    "action": "Lancer le diagnostic",
+    "cta_primary": "Générer les Titres",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "website_url",
+        "label": "URL à auditer",
+        "type": "text",
+        "placeholder": "https://exemple.fr/offre-eco",
+        "weight": 1.0
+      },
+      {
+        "id": "page_title",
+        "label": "Balise title actuelle",
+        "type": "text",
+        "placeholder": "Comparateur assurance auto jeune conducteur",
+        "weight": 1.0
+      },
+      {
+        "id": "focus_keyword",
+        "label": "Mot-clé principal",
+        "type": "text",
+        "placeholder": "assurance auto jeune conducteur",
+        "weight": 1.0
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Atlas Report",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Diagnostic",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Atlas Report",
+      "Générer les Titres",
+      "Diagnostic",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Diagnostic",
+    "result_unit": "EUR",
+    "runtime_mode": "seo_diagnostic",
+    "page_variant": "console",
+    "faq_topic": "estimation rapide",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour estimation rapide ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de estimation rapide et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Générateur de Titres SEO &amp; Créatifs pour Votre Contenu | Générez Vos Titres en un Instant</title>\n    <meta name=\"description\" content=\"Créez instantanément des titres percutants et optimisés pour le SEO, le marketing ou vos réseaux sociaux. Outil gratuit pour journalistes, marketeurs et créateurs de contenu en France.\">\n    <style>\n        :root {\n            --color-bg-primary: #0F172A;\n            --color-bg-secondary: #1E293B;\n            --color-text-primary: #F8FAFC;\n            --color-text-secondary: #94A3B8;\n            --color-accent-blue: #3B82F6;\n            --color-accent-purple: #8B5CF6;\n            --color-border: #334155;\n            --font-family-headline: 'Inter', sans-serif;\n            --font-family-body: 'Open Sans', sans-serif;\n            --glass-background: rgba(46, 59, 87, 0.2);\n            --glass-border: 1px solid rgba(255, 255, 255, 0.1);\n            --glass-backdrop-filter: blur(10px);\n            --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);\n            --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);\n        }\n\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600&display=swap');\n\n        body {\n            font-family: var(--font-family-body);\n            background-color: var(--color-bg-primary);\n            color: var(--color-text-primary);\n            margin: 0;\n            padding: 0;\n            line-height: 1.6;\n            display: flex;\n            flex-direction: column;\n            min-height: 100vh;\n        }\n\n        .container {\n            max-width: 1000px;\n            margin: 0 auto;\n            padding: 20px;\n            box-sizing: border-box;\n        }\n\n        header {\n            background-color: var(--color-bg-secondary);\n            padding: 40px 20px;\n            text-align: center;\n            border-bottom: var(--glass-border);\n            box-shadow: var(--shadow-glass);\n        }\n\n        h1 {\n            font-family: var(--font-family-headline);\n            font-size: 3.5em;\n            color: var(--color-text-primary);\n            margin-bottom: 10px;\n            text-shadow: 0 0 10px var(--color-accent-blue);\n        }\n\n        header p {\n            font-size: 1.2em;\n            color: var(--color-text-secondary);\n            max-width: 700px;\n            margin: 0 auto;\n        }\n\n        .tool-section {\n            padding: 60px 20px;\n            background-color: var(--color-bg-primary);\n        }\n\n        .glass-card {\n            background: var(--glass-background);\n            border-radius: 16px;\n            border: var(--glass-border);\n            box-shadow: var(--shadow-glass);\n            backdrop-filter: var(--glass-backdrop-filter);\n            padding: 40px;\n            margin-bottom: 40px;\n            transition: all 0.3s ease;\n        }\n\n        .glass-card:hover {\n            transform: translateY(-5px);\n            box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.5);\n        }\n\n        h2 {\n            font-family: var(--font-family-headline);\n            font-size: 2.5em;\n            color: var(--color-accent-blue);\n            margin-top: 0;\n            margin-bottom: 25px;\n            text-align: center;\n        }\n\n        label {\n            display: block;\n            margin-bottom: 10px;\n            color: var(--color-text-secondary);\n            font-weight: 600;\n        }\n\n        input[type=\"text\"],\n        textarea,\n        select {\n            width: 100%;\n            padding: 15px;\n            margin-bottom: 20px;\n            border-radius: 8px;\n            border: 1px solid var(--color-border);\n            background-color: var(--color-bg-secondary);\n            color: var(--color-text-primary);\n            font-size: 1em;\n            box-sizing: border-box;\n            transition: border-color 0.3s ease, box-shadow 0.3s ease;\n        }\n\n        input[type=\"text\"]:focus,\n        textarea:focus,\n        select:focus {\n            border-color: var(--color-accent-blue);\n            outline: none;\n            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);\n        }\n\n        textarea {\n            min-height: 100px;\n            resize: vertical;\n        }\n\n        button {\n            background: linear-gradient(45deg, var(--color-accent-blue), var(--color-accent-purple));\n            color: var(--color-text-primary);\n            border: none;\n            padding: 15px 30px;\n            border-radius: 8px;\n            cursor: pointer;\n            font-size: 1.1em;\n            font-weight: bold;\n            transition: all 0.3s ease;\n            display: block;\n            width: fit-content;\n            margin: 0 auto;\n            box-shadow: var(--shadow-light);\n        }\n\n        button:hover {\n            transform: translateY(-2px);\n            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);\n        }\n\n        #tool-result {\n            margin-top: 40px;\n            padding: 30px;\n            background: var(--glass-background);\n            border-radius: 16px;\n            border: var(--glass-border);\n            box-shadow: var(--shadow-glass);\n            min-height: 150px;\n            color: var(--color-text-primary);\n            font-size: 1.1em;\n            text-align: center;\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n        }\n\n        #tool-result h3 {\n            font-family: var(--font-family-headline);\n            color: var(--color-accent-blue);\n            font-size: 1.8em;\n            margin-bottom: 20px;\n            width: 100%;\n            text-align: left;\n        }\n\n        .result-group {\n            width: 100%;\n            text-align: left;\n            margin-bottom: 20px;\n        }\n\n        .result-group h4 {\n            font-family: var(--font-family-headline);\n            color: var(--color-accent-purple);\n            font-size: 1.3em;\n            margin-bottom: 10px;\n            border-bottom: 1px dashed var(--color-border);\n            padding-bottom: 5px;\n        }\n\n        .result-group ul {\n            list-style: none;\n            padding: 0;\n            margin: 0;\n        }\n\n        .result-group li {\n            background-color: rgba(59, 130, 246, 0.1);\n            border-left: 3px solid var(--color-accent-blue);\n            padding: 10px 15px;\n            margin-bottom: 8px;\n            border-radius: 4px;\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n            font-size: 0.95em;\n        }\n        .result-group li span {\n            flex-grow: 1;\n        }\n        .copy-button {\n            background-color: var(--color-accent-purple);\n            color: white;\n            border: none;\n            padding: 5px 10px;\n            border-radius: 5px;\n            cursor: pointer;\n            font-size: 0.8em;\n            margin-left: 10px;\n            transition: background-color 0.2s ease;\n        }\n        .copy-button:hover {\n            background-color: #6D28D9;\n        }\n\n        .value-proposition {\n            padding: 60px 20px;\n            background-color: var(--color-bg-secondary);\n            text-align: center;\n            border-top: var(--glass-border);\n            border-bottom: var(--glass-border);\n        }\n\n        .value-proposition h3 {\n            font-family: var(--font-family-headline);\n            font-size: 2em;\n            color: var(--color-text-primary);\n            margin-bottom: 25px;\n        }\n\n        .usp-grid {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n            gap: 30px;\n            margin-top: 40px;\n        }\n\n        .usp-item {\n            background: var(--glass-background);\n            border-radius: 16px;\n            border: var(--glass-border);\n            box-shadow: var(--shadow-glass);\n            padding: 30px;\n            text-align: left;\n            transition: transform 0.3s ease;\n        }\n\n        .usp-item:hover {\n            transform: translateY(-5px);\n        }\n\n        .usp-item h4 {\n            font-family: var(--font-family-headline);\n            color: var(--color-accent-blue);\n            font-size: 1.4em;\n            margin-top: 0;\n            margin-bottom: 15px;\n        }\n\n        .usp-item p {\n            color: var(--color-text-secondary);\n            font-size: 0.95em;\n        }\n\n        .seo-section {\n            padding: 60px 20px;\n            background-color: var(--color-bg-primary);\n            color: var(--color-text-secondary);\n            text-align: center;\n        }\n\n        .seo-section h3 {\n            font-family: var(--font-family-headline);\n            font-size: 2em;\n            color: var(--color-text-primary);\n            margin-bottom: 25px;\n        }\n\n        .seo-section p {\n            max-width: 800px;\n            margin: 0 auto 20px auto;\n            text-align: left;\n            font-size: 0.9em;\n        }\n\n        footer {\n            background-color: var(--color-bg-secondary);\n            color: var(--color-text-secondary);\n            text-align: center;\n            padding: 30px 20px;\n            font-size: 0.9em;\n            border-top: var(--glass-border);\n            margin-top: auto;\n        }\n\n        @media (max-width: 768px) {\n            h1 {\n                font-size: 2.5em;\n            }\n\n            header p {\n                font-size: 1em;\n            }\n\n            h2 {\n                font-size: 2em;\n            }\n\n            .glass-card {\n                padding: 25px;\n            }\n\n            button {\n                width: 100%;\n                padding: 12px 20px;\n            }\n\n            .usp-grid {\n                grid-template-columns: 1fr;\n            }\n\n            .usp-item {\n                padding: 25px;\n            }\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://generateur-de-titres-seo-creatifs-pour-votre-contenu-1.onrender.com\">\n    <meta property=\"og:title\" content=\"Générateur de Titres SEO &amp; Créatifs pour Votre Contenu\">\n    <meta property=\"og:description\" content=\"Créez instantanément des titres percutants et optimisés pour le SEO, le marketing ou vos réseaux sociaux. Outil gratuit pour journalistes, marketeurs et créateurs de contenu en France.\">\n    <meta property=\"og:url\" content=\"https://generateur-de-titres-seo-creatifs-pour-votre-contenu-1.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Générateur de Titres SEO & Créatifs pour Votre Contenu\", \"description\": \"Créez instantanément des titres percutants et optimisés pour le SEO, le marketing ou vos réseaux sociaux. Outil gratuit pour journalistes, marketeurs et créateurs de contenu en France.\", \"url\": \"https://generateur-de-titres-seo-creatifs-pour-votre-contenu-1.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"generateur-de-titres-seo-creatifs-pour-votre-contenu-1\" data-runtime-mode=\"seo_diagnostic\">\n    <header>\n        <div class=\"container\">\n            <h1>Libérez la Puissance de Vos Titres</h1>\n            <p>Concevez des accroches irrésistibles qui captivent votre audience et optimisent votre visibilité. Notre générateur vous offre une palette de titres prêts à l'emploi pour chaque objectif.</p>\n        </div>\n    </header>\n\n    <main>\n        <section class=\"tool-section\">\n            <div class=\"container\">\n                <div class=\"glass-card\">\n                    <h2>Générez Vos Titres en un Instant</h2>\n                    <form id=\"tool-form\">\n                        <label for=\"topic\">Sujet principal (Ex: \"cuisine rapide\", \"avantages du télétravail\")</label>\n                        <input type=\"text\" id=\"topic\" name=\"topic\" placeholder=\"Décrivez votre sujet en quelques mots clés...\" required>\n\n                        <label for=\"keywords\">Mots-clés additionnels (Ex: \"recettes faciles\", \"bien-être\", \"productivité\")</label>\n                        <input type=\"text\" id=\"keywords\" name=\"keywords\" placeholder=\"Séparez les mots-clés par des virgules (optionnel)\">\n\n                        <label for=\"targetAudience\">Audience cible (Ex: \"entrepreneurs\", \"parents débordés\", \"débutants en jardinage\")</label>\n                        <input type=\"text\" id=\"targetAudience\" name=\"targetAudience\" placeholder=\"Qui voulez-vous atteindre ? (optionnel)\">\n\n                        <label for=\"tone\">Tonalité souhaitée</label>\n                        <select id=\"tone\" name=\"tone\">\n                            <option value=\"professional\">Professionnel</option>\n                            <option value=\"enthusiastic\">Enthousiaste</option>\n                            <option value=\"authoritative\">Autoritaire</option>\n                            <option value=\"friendly\">Amical</option>\n                            <option value=\"curious\">Curieux</option>\n                            <option value=\"urgent\">Urgent</option>\n                        </select>\n                        <br><br>\n                        <button type=\"submit\" id=\"tool-submit\" data-affiliate-slot=\"title-generator-submit\">Générer les Titres</button>\n                    </form>\n                </div>\n\n                <div id=\"tool-result\" class=\"glass-card\" style=\"display: none;\">\n                    <h3 id=\"result-headline\">Vos Titres Générés :</h3>\n                    <!-- Results will be injected here -->\n                </div>\n            </div>\n        </section>\n\n        <section class=\"value-proposition\">\n            <div class=\"container\">\n                <h3>Pourquoi des Titres Impactants sont Essentiels ?</h3>\n                <p class=\"color-text-secondary\">Un titre n'est pas qu'une simple étiquette, c'est la promesse de votre contenu, le premier contact avec votre lecteur et un levier puissant pour le SEO.</p>\n                <div class=\"usp-grid\">\n                    <div class=\"usp-item\">\n                        <h4>Attirer l'Attention</h4>\n                        <p>Dans un océan de contenu, un titre accrocheur est votre bouée de sauvetage. Captez l'œil de votre audience dès les premières secondes.</p>\n                    </div>\n                    <div class=\"usp-item\">\n                        <h4>Optimiser le Référencement (SEO)</h4>\n                        <p>Des titres bien formulés avec les bons mots-clés augmentent votre visibilité sur Google et attirent un trafic qualifié.</p>\n                    </div>\n                    <div class=\"usp-item\">\n                        <h4>Améliorer le Taux de Clic (CTR)</h4>\n                        <p>Un titre pertinent et engageant incite davantage les utilisateurs à cliquer sur votre lien, qu'il soit sur une SERP ou un réseau social.</p>\n                    </div>\n                    <div class=\"usp-item\">\n                        <h4>Communiquer la Valeur</h4>\n                        <p>Dites clairement ce que le lecteur va gagner en consultant votre contenu. Éveillez la curiosité et la promesse d'une solution.</p>\n                    </div>\n                </div>\n            </div>\n        </section>\n\n        <section class=\"seo-section\">\n            <div class=\"container\">\n                <h3>Optimisez Votre Visibilité en Ligne avec des Titres Pertinents</h3>\n                <p>À l'ère numérique, la concurrence est féroce. Que vous soyez blogueur, créateur de contenu, marketeur ou responsable e-commerce, la qualité de vos titres est déterminante. Un bon titre ne se contente pas d'informer, il séduit, interpelle et convertit. Notre générateur de titres gratuit est l'outil indispensable pour rédiger des titres accrocheurs et optimisés pour le référencement naturel (SEO).</p>\n                <p>Cherchez-vous des idées de titres pour votre prochain article de blog sur les \"astuces télétravail\" ? Ou peut-être des titres percutants pour vos campagnes publicitaires sur les \"meilleures recettes végétariennes\" ? Notre plateforme vous aide à trouver l'inspiration. Générez des titres pour vos vidéos YouTube, vos publications LinkedIn, vos articles de presse ou même vos fiches produits. Avec des catégories variées comme les titres SEO, clickbait, experts, doux ou commerciaux, vous avez l'assurance de trouver la formule parfaite qui correspond à vos objectifs et à l'identité de votre marque.</p>\n                <p>N'attendez plus pour booster l'impact de votre contenu sur le marché français. Utilisez notre outil pour améliorer votre taux de clic (CTR), attirer plus de trafic qualifié et renforcer votre stratégie de contenu. Facile d'utilisation et entièrement gratuit, il est conçu pour les professionnels du web en France qui souhaitent optimiser leur présence en ligne et capter l'attention de leur audience.</p>\n            </div>\n        </section>\n    </main>\n\n    <footer>\n        <div class=\"container\">\n            <p>&copy; 2023 Générateur de Titres | Tous droits réservés.</p>\n        </div>\n    </footer>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const topic = document.getElementById('topic').value.trim();\n            const keywords = document.getElementById('keywords').value.trim().split(',').map(k => k.trim()).filter(k => k);\n            const targetAudience = document.getElementById('targetAudience').value.trim();\n            const tone = document.getElementById('tone').value;\n\n            if (!topic) {\n                alert('Veuillez saisir un sujet principal.');\n                return;\n            }\n\n            const results = generateTitles(topic, keywords, targetAudience, tone);\n            displayResults(results);\n        });\n\n        function generateTitles(topic, keywords, targetAudience, tone) {\n            const allKeywords = [topic, ...keywords, targetAudience].filter(Boolean);\n            const combinedKeywords = allKeywords.length > 0 ? allKeywords.join(' ') : topic;\n\n            const seo = [\n                `Comment ${topic} : Le Guide Complet pour les ${targetAudience || 'Experts'}`,\n                `Optimisez Votre ${topic} : Les 10 Meilleures Stratégies pour 2023`,\n                `Le Secret pour ${topic} Efficacement : Une Analyse Approfondie`,\n                `Maîtrisez le ${topic} : Trucs et Astuces Indispensables pour les ${targetAudience || 'Professionnels'}`,\n                `Pourquoi le ${topic} est Crucial pour Votre Succès en ${new Date().getFullYear()}`,\n                `Guide Ultime : ${topic} de A à Z pour ${targetAudience || 'Tous les Niveaux'}`\n            ];\n\n            const clickbait = [\n                `Choquant : La Vérité sur le ${topic} Que Personne Ne Vous Dit !`,\n                `Vous Ne Croirez Jamais Ce Que Nous Avons Découvert sur le ${topic}`,\n                `Le ${topic} : Cette Erreur Que Vous Faites Sûrement (et Comment l'Éviter)`,\n                `1 Simple Astuce Pour ${topic} Qui Va Changer Votre Vie`,\n                `Arrêtez de ${topic} Mal : Voici Pourquoi Vous Ratez Tout !`,\n                `Le Secret Bien Gardé pour ${topic} Révélé !`\n            ];\n\n            const expert = [\n                `Analyse Stratégique : Les Leviers de Croissance du ${topic}`,\n                `Prospective 2023 : Les Tendances Émergentes en ${topic}`,\n                `Décryptage : Comprendre la Complexité du ${topic} pour une Performance Optimale`,\n                `Au-Delà des Évidences : Une Approche Novatrice du ${topic}`,\n                `Synthèse Expert : L'Impact de ${topic} sur les Écosystèmes Numériques`,\n                `Méthodologie Avancée pour un ${topic} Réussi et Durable`\n            ];\n\n            const soft = [\n                `Explorez l'Univers du ${topic} : Un Voyage Inspirant`,\n                `Le ${topic} en Douceur : Prenez le Temps de Découvrir`,\n                `Votre Chemin vers un ${topic} Épanouissant : Nos Conseils Bienveillants`,\n                `Petits Bonheurs et ${topic} : Cultiver la Sérénité au Quotidien`,\n                `La Magie du ${topic} : Réinventez Votre Approche`,\n                `Un Instant de Calme pour Mieux Comprendre le ${topic}`\n            ];\n\n            const commercial = [\n                `Découvrez Notre Solution pour ${topic} : Efficacité Garantie !`,\n                `Boostez Votre Performance avec Notre Offre ${topic} Premium`,\n                `Investissez dans Votre ${topic} : Nos Produits Révolutionnaires`,\n                `Ne Manquez Pas Nos Promotions Exclusives sur le ${topic}`,\n                `Simplifiez Votre Quotidien Grâce à Notre Technologie de ${topic}`,\n                `Obtenez des Résultats Concrets avec Nos Services de ${topic}`\n            ];\n\n            // Tone adjustments (simple placeholder logic)\n            const adjustForTone = (titles, currentTone) => {\n                if (currentTone === 'enthusiastic') {\n                    return titles.map(t => `${t} !`);\n                }\n                if (currentTone === 'urgent') {\n                    return titles.map(t => `${t} Maintenant !`);\n                }\n                return titles;\n            };\n\n            return {\n                seo: adjustForTone(seo.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),\n                clickbait: adjustForTone(clickbait.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),\n                expert: adjustForTone(expert.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),\n                soft: adjustForTone(soft.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),\n                commercial: adjustForTone(commercial.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone)\n            };\n        }\n\n        function replacePlaceholders(title, topic, allKeywords, targetAudience) {\n            let processedTitle = title.replace(/\\$\\{topic\\}/g, topic);\n            processedTitle = processedTitle.replace(/\\$\\{keywords\\}/g, allKeywords.filter(k => k !== topic && k !== targetAudience).join(', '));\n            processedTitle = processedTitle.replace(/\\$\\{targetAudience\\}/g, targetAudience || 'passionnés'); // Fallback for target audience\n\n            // More generic replacements if specific placeholders are not matched\n            if (processedTitle.includes('topic')) processedTitle = processedTitle.replace('topic', topic);\n            if (processedTitle.includes('keyword')) processedTitle = processedTitle.replace('keyword', allKeywords[1] || topic);\n            if (processedTitle.includes('audience')) processedTitle = processedTitle.replace('audience', targetAudience || 'lecteurs');\n\n            return processedTitle;\n        }\n\n\n        function displayResults(results) {\n            const resultDiv = document.getElementById('tool-result');\n            resultDiv.innerHTML = '<h3>Vos Titres Générés :</h3>';\n\n            for (const category in results) {\n                if (results[category].length > 0) {\n                    const groupDiv = document.createElement('div');\n                    groupDiv.className = 'result-group';\n                    groupDiv.innerHTML = `<h4>${formatCategoryName(category)}</h4><ul></ul>`;\n                    const ul = groupDiv.querySelector('ul');\n                    results[category].forEach(title => {\n                        const li = document.createElement('li');\n                        li.innerHTML = `<span>${title}</span> <button class=\"copy-button\" onclick=\"copyToClipboard(this)\">Copier</button>`;\n                        ul.appendChild(li);\n                    });\n                    resultDiv.appendChild(groupDiv);\n                }\n            }\n            resultDiv.style.display = 'flex'; // Show the results section\n            resultDiv.scrollIntoView({ behavior: 'smooth' });\n        }\n\n        function formatCategoryName(category) {\n            switch (category) {\n                case 'seo': return 'SEO (Optimisation Moteurs de Recherche)';\n                case 'clickbait': return 'Clickbait (Accrocheur)';\n                case 'expert': return 'Expert (Approfondi)';\n                case 'soft': return 'Doux (Bienveillant)';\n                case 'commercial': return 'Commercial (Vente)';\n                default: return category;\n            }\n        }\n\n        function copyToClipboard(button) {\n            const titleSpan = button.previousElementSibling;\n            const textToCopy = titleSpan.textContent;\n\n            navigator.clipboard.writeText(textToCopy).then(() => {\n                button.textContent = 'Copié !';\n                setTimeout(() => {\n                    button.textContent = 'Copier';\n                }, 1500);\n            }).catch(err => {\n                console.error('Erreur de copie: ', err);\n                alert('Échec de la copie. Veuillez copier manuellement.');\n            });\n        }\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.removeAttribute(\"rel\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
