@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Titres SEO &amp; Créatifs pour Votre Contenu | Générez Vos Titres en un Instant</title>
+    <meta name="description" content="Créez instantanément des titres percutants et optimisés pour le SEO, le marketing ou vos réseaux sociaux. Outil gratuit pour journalistes, marketeurs et créateurs de contenu en France.">
+    <style>
+        :root {
+            --color-bg-primary: #0F172A;
+            --color-bg-secondary: #1E293B;
+            --color-text-primary: #F8FAFC;
+            --color-text-secondary: #94A3B8;
+            --color-accent-blue: #3B82F6;
+            --color-accent-purple: #8B5CF6;
+            --color-border: #334155;
+            --font-family-headline: 'Inter', sans-serif;
+            --font-family-body: 'Open Sans', sans-serif;
+            --glass-background: rgba(46, 59, 87, 0.2);
+            --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+            --glass-backdrop-filter: blur(10px);
+            --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: var(--font-family-body);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--color-bg-secondary);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: var(--glass-border);
+            box-shadow: var(--shadow-glass);
+        }
+
+        h1 {
+            font-family: var(--font-family-headline);
+            font-size: 3.5em;
+            color: var(--color-text-primary);
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px var(--color-accent-blue);
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: var(--color-text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .tool-section {
+            padding: 60px 20px;
+            background-color: var(--color-bg-primary);
+        }
+
+        .glass-card {
+            background: var(--glass-background);
+            border-radius: 16px;
+            border: var(--glass-border);
+            box-shadow: var(--shadow-glass);
+            backdrop-filter: var(--glass-backdrop-filter);
+            padding: 40px;
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.5);
+        }
+
+        h2 {
+            font-family: var(--font-family-headline);
+            font-size: 2.5em;
+            color: var(--color-accent-blue);
+            margin-top: 0;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--color-text-secondary);
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background-color: var(--color-bg-secondary);
+            color: var(--color-text-primary);
+            font-size: 1em;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--color-accent-blue);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background: linear-gradient(45deg, var(--color-accent-blue), var(--color-accent-purple));
+            color: var(--color-text-primary);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            box-shadow: var(--shadow-light);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #tool-result {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--glass-background);
+            border-radius: 16px;
+            border: var(--glass-border);
+            box-shadow: var(--shadow-glass);
+            min-height: 150px;
+            color: var(--color-text-primary);
+            font-size: 1.1em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tool-result h3 {
+            font-family: var(--font-family-headline);
+            color: var(--color-accent-blue);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .result-group {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .result-group h4 {
+            font-family: var(--font-family-headline);
+            color: var(--color-accent-purple);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed var(--color-border);
+            padding-bottom: 5px;
+        }
+
+        .result-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .result-group li {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 3px solid var(--color-accent-blue);
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95em;
+        }
+        .result-group li span {
+            flex-grow: 1;
+        }
+        .copy-button {
+            background-color: var(--color-accent-purple);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8em;
+            margin-left: 10px;
+            transition: background-color 0.2s ease;
+        }
+        .copy-button:hover {
+            background-color: #6D28D9;
+        }
+
+        .value-proposition {
+            padding: 60px 20px;
+            background-color: var(--color-bg-secondary);
+            text-align: center;
+            border-top: var(--glass-border);
+            border-bottom: var(--glass-border);
+        }
+
+        .value-proposition h3 {
+            font-family: var(--font-family-headline);
+            font-size: 2em;
+            color: var(--color-text-primary);
+            margin-bottom: 25px;
+        }
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .usp-item {
+            background: var(--glass-background);
+            border-radius: 16px;
+            border: var(--glass-border);
+            box-shadow: var(--shadow-glass);
+            padding: 30px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .usp-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .usp-item h4 {
+            font-family: var(--font-family-headline);
+            color: var(--color-accent-blue);
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .usp-item p {
+            color: var(--color-text-secondary);
+            font-size: 0.95em;
+        }
+
+        .seo-section {
+            padding: 60px 20px;
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-secondary);
+            text-align: center;
+        }
+
+        .seo-section h3 {
+            font-family: var(--font-family-headline);
+            font-size: 2em;
+            color: var(--color-text-primary);
+            margin-bottom: 25px;
+        }
+
+        .seo-section p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background-color: var(--color-bg-secondary);
+            color: var(--color-text-secondary);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+            border-top: var(--glass-border);
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .glass-card {
+                padding: 25px;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px 20px;
+            }
+
+            .usp-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .usp-item {
+                padding: 25px;
+            }
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://generateur-de-titres-seo-creatifs-pour-votre-contenu-1.onrender.com">
+    <meta property="og:title" content="Générateur de Titres SEO &amp; Créatifs pour Votre Contenu">
+    <meta property="og:description" content="Créez instantanément des titres percutants et optimisés pour le SEO, le marketing ou vos réseaux sociaux. Outil gratuit pour journalistes, marketeurs et créateurs de contenu en France.">
+    <meta property="og:url" content="https://generateur-de-titres-seo-creatifs-pour-votre-contenu-1.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Générateur de Titres SEO & Créatifs pour Votre Contenu", "description": "Créez instantanément des titres percutants et optimisés pour le SEO, le marketing ou vos réseaux sociaux. Outil gratuit pour journalistes, marketeurs et créateurs de contenu en France.", "url": "https://generateur-de-titres-seo-creatifs-pour-votre-contenu-1.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="generateur-de-titres-seo-creatifs-pour-votre-contenu-1" data-runtime-mode="seo_diagnostic">
+    <header>
+        <div class="container">
+            <h1>Libérez la Puissance de Vos Titres</h1>
+            <p>Concevez des accroches irrésistibles qui captivent votre audience et optimisent votre visibilité. Notre générateur vous offre une palette de titres prêts à l'emploi pour chaque objectif.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="tool-section">
+            <div class="container">
+                <div class="glass-card">
+                    <h2>Générez Vos Titres en un Instant</h2>
+                    <form id="tool-form">
+                        <label for="topic">Sujet principal (Ex: "cuisine rapide", "avantages du télétravail")</label>
+                        <input type="text" id="topic" name="topic" placeholder="Décrivez votre sujet en quelques mots clés..." required>
+
+                        <label for="keywords">Mots-clés additionnels (Ex: "recettes faciles", "bien-être", "productivité")</label>
+                        <input type="text" id="keywords" name="keywords" placeholder="Séparez les mots-clés par des virgules (optionnel)">
+
+                        <label for="targetAudience">Audience cible (Ex: "entrepreneurs", "parents débordés", "débutants en jardinage")</label>
+                        <input type="text" id="targetAudience" name="targetAudience" placeholder="Qui voulez-vous atteindre ? (optionnel)">
+
+                        <label for="tone">Tonalité souhaitée</label>
+                        <select id="tone" name="tone">
+                            <option value="professional">Professionnel</option>
+                            <option value="enthusiastic">Enthousiaste</option>
+                            <option value="authoritative">Autoritaire</option>
+                            <option value="friendly">Amical</option>
+                            <option value="curious">Curieux</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                        <br><br>
+                        <button type="submit" id="tool-submit" data-affiliate-slot="title-generator-submit">Générer les Titres</button>
+                    </form>
+                </div>
+
+                <div id="tool-result" class="glass-card" style="display: none;">
+                    <h3 id="result-headline">Vos Titres Générés :</h3>
+                    <!-- Results will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="value-proposition">
+            <div class="container">
+                <h3>Pourquoi des Titres Impactants sont Essentiels ?</h3>
+                <p class="color-text-secondary">Un titre n'est pas qu'une simple étiquette, c'est la promesse de votre contenu, le premier contact avec votre lecteur et un levier puissant pour le SEO.</p>
+                <div class="usp-grid">
+                    <div class="usp-item">
+                        <h4>Attirer l'Attention</h4>
+                        <p>Dans un océan de contenu, un titre accrocheur est votre bouée de sauvetage. Captez l'œil de votre audience dès les premières secondes.</p>
+                    </div>
+                    <div class="usp-item">
+                        <h4>Optimiser le Référencement (SEO)</h4>
+                        <p>Des titres bien formulés avec les bons mots-clés augmentent votre visibilité sur Google et attirent un trafic qualifié.</p>
+                    </div>
+                    <div class="usp-item">
+                        <h4>Améliorer le Taux de Clic (CTR)</h4>
+                        <p>Un titre pertinent et engageant incite davantage les utilisateurs à cliquer sur votre lien, qu'il soit sur une SERP ou un réseau social.</p>
+                    </div>
+                    <div class="usp-item">
+                        <h4>Communiquer la Valeur</h4>
+                        <p>Dites clairement ce que le lecteur va gagner en consultant votre contenu. Éveillez la curiosité et la promesse d'une solution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-section">
+            <div class="container">
+                <h3>Optimisez Votre Visibilité en Ligne avec des Titres Pertinents</h3>
+                <p>À l'ère numérique, la concurrence est féroce. Que vous soyez blogueur, créateur de contenu, marketeur ou responsable e-commerce, la qualité de vos titres est déterminante. Un bon titre ne se contente pas d'informer, il séduit, interpelle et convertit. Notre générateur de titres gratuit est l'outil indispensable pour rédiger des titres accrocheurs et optimisés pour le référencement naturel (SEO).</p>
+                <p>Cherchez-vous des idées de titres pour votre prochain article de blog sur les "astuces télétravail" ? Ou peut-être des titres percutants pour vos campagnes publicitaires sur les "meilleures recettes végétariennes" ? Notre plateforme vous aide à trouver l'inspiration. Générez des titres pour vos vidéos YouTube, vos publications LinkedIn, vos articles de presse ou même vos fiches produits. Avec des catégories variées comme les titres SEO, clickbait, experts, doux ou commerciaux, vous avez l'assurance de trouver la formule parfaite qui correspond à vos objectifs et à l'identité de votre marque.</p>
+                <p>N'attendez plus pour booster l'impact de votre contenu sur le marché français. Utilisez notre outil pour améliorer votre taux de clic (CTR), attirer plus de trafic qualifié et renforcer votre stratégie de contenu. Facile d'utilisation et entièrement gratuit, il est conçu pour les professionnels du web en France qui souhaitent optimiser leur présence en ligne et capter l'attention de leur audience.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Générateur de Titres | Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const topic = document.getElementById('topic').value.trim();
+            const keywords = document.getElementById('keywords').value.trim().split(',').map(k => k.trim()).filter(k => k);
+            const targetAudience = document.getElementById('targetAudience').value.trim();
+            const tone = document.getElementById('tone').value;
+
+            if (!topic) {
+                alert('Veuillez saisir un sujet principal.');
+                return;
+            }
+
+            const results = generateTitles(topic, keywords, targetAudience, tone);
+            displayResults(results);
+        });
+
+        function generateTitles(topic, keywords, targetAudience, tone) {
+            const allKeywords = [topic, ...keywords, targetAudience].filter(Boolean);
+            const combinedKeywords = allKeywords.length > 0 ? allKeywords.join(' ') : topic;
+
+            const seo = [
+                `Comment ${topic} : Le Guide Complet pour les ${targetAudience || 'Experts'}`,
+                `Optimisez Votre ${topic} : Les 10 Meilleures Stratégies pour 2023`,
+                `Le Secret pour ${topic} Efficacement : Une Analyse Approfondie`,
+                `Maîtrisez le ${topic} : Trucs et Astuces Indispensables pour les ${targetAudience || 'Professionnels'}`,
+                `Pourquoi le ${topic} est Crucial pour Votre Succès en ${new Date().getFullYear()}`,
+                `Guide Ultime : ${topic} de A à Z pour ${targetAudience || 'Tous les Niveaux'}`
+            ];
+
+            const clickbait = [
+                `Choquant : La Vérité sur le ${topic} Que Personne Ne Vous Dit !`,
+                `Vous Ne Croirez Jamais Ce Que Nous Avons Découvert sur le ${topic}`,
+                `Le ${topic} : Cette Erreur Que Vous Faites Sûrement (et Comment l'Éviter)`,
+                `1 Simple Astuce Pour ${topic} Qui Va Changer Votre Vie`,
+                `Arrêtez de ${topic} Mal : Voici Pourquoi Vous Ratez Tout !`,
+                `Le Secret Bien Gardé pour ${topic} Révélé !`
+            ];
+
+            const expert = [
+                `Analyse Stratégique : Les Leviers de Croissance du ${topic}`,
+                `Prospective 2023 : Les Tendances Émergentes en ${topic}`,
+                `Décryptage : Comprendre la Complexité du ${topic} pour une Performance Optimale`,
+                `Au-Delà des Évidences : Une Approche Novatrice du ${topic}`,
+                `Synthèse Expert : L'Impact de ${topic} sur les Écosystèmes Numériques`,
+                `Méthodologie Avancée pour un ${topic} Réussi et Durable`
+            ];
+
+            const soft = [
+                `Explorez l'Univers du ${topic} : Un Voyage Inspirant`,
+                `Le ${topic} en Douceur : Prenez le Temps de Découvrir`,
+                `Votre Chemin vers un ${topic} Épanouissant : Nos Conseils Bienveillants`,
+                `Petits Bonheurs et ${topic} : Cultiver la Sérénité au Quotidien`,
+                `La Magie du ${topic} : Réinventez Votre Approche`,
+                `Un Instant de Calme pour Mieux Comprendre le ${topic}`
+            ];
+
+            const commercial = [
+                `Découvrez Notre Solution pour ${topic} : Efficacité Garantie !`,
+                `Boostez Votre Performance avec Notre Offre ${topic} Premium`,
+                `Investissez dans Votre ${topic} : Nos Produits Révolutionnaires`,
+                `Ne Manquez Pas Nos Promotions Exclusives sur le ${topic}`,
+                `Simplifiez Votre Quotidien Grâce à Notre Technologie de ${topic}`,
+                `Obtenez des Résultats Concrets avec Nos Services de ${topic}`
+            ];
+
+            // Tone adjustments (simple placeholder logic)
+            const adjustForTone = (titles, currentTone) => {
+                if (currentTone === 'enthusiastic') {
+                    return titles.map(t => `${t} !`);
+                }
+                if (currentTone === 'urgent') {
+                    return titles.map(t => `${t} Maintenant !`);
+                }
+                return titles;
+            };
+
+            return {
+                seo: adjustForTone(seo.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),
+                clickbait: adjustForTone(clickbait.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),
+                expert: adjustForTone(expert.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),
+                soft: adjustForTone(soft.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone),
+                commercial: adjustForTone(commercial.map(t => replacePlaceholders(t, topic, allKeywords, targetAudience)), tone)
+            };
+        }
+
+        function replacePlaceholders(title, topic, allKeywords, targetAudience) {
+            let processedTitle = title.replace(/\$\{topic\}/g, topic);
+            processedTitle = processedTitle.replace(/\$\{keywords\}/g, allKeywords.filter(k => k !== topic && k !== targetAudience).join(', '));
+            processedTitle = processedTitle.replace(/\$\{targetAudience\}/g, targetAudience || 'passionnés'); // Fallback for target audience
+
+            // More generic replacements if specific placeholders are not matched
+            if (processedTitle.includes('topic')) processedTitle = processedTitle.replace('topic', topic);
+            if (processedTitle.includes('keyword')) processedTitle = processedTitle.replace('keyword', allKeywords[1] || topic);
+            if (processedTitle.includes('audience')) processedTitle = processedTitle.replace('audience', targetAudience || 'lecteurs');
+
+            return processedTitle;
+        }
+
+
+        function displayResults(results) {
+            const resultDiv = document.getElementById('tool-result');
+            resultDiv.innerHTML = '<h3>Vos Titres Générés :</h3>';
+
+            for (const category in results) {
+                if (results[category].length > 0) {
+                    const groupDiv = document.createElement('div');
+                    groupDiv.className = 'result-group';
+                    groupDiv.innerHTML = `<h4>${formatCategoryName(category)}</h4><ul></ul>`;
+                    const ul = groupDiv.querySelector('ul');
+                    results[category].forEach(title => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<span>${title}</span> <button class="copy-button" onclick="copyToClipboard(this)">Copier</button>`;
+                        ul.appendChild(li);
+                    });
+                    resultDiv.appendChild(groupDiv);
+                }
+            }
+            resultDiv.style.display = 'flex'; // Show the results section
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function formatCategoryName(category) {
+            switch (category) {
+                case 'seo': return 'SEO (Optimisation Moteurs de Recherche)';
+                case 'clickbait': return 'Clickbait (Accrocheur)';
+                case 'expert': return 'Expert (Approfondi)';
+                case 'soft': return 'Doux (Bienveillant)';
+                case 'commercial': return 'Commercial (Vente)';
+                default: return category;
+            }
+        }
+
+        function copyToClipboard(button) {
+            const titleSpan = button.previousElementSibling;
+            const textToCopy = titleSpan.textContent;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                button.textContent = 'Copié !';
+                setTimeout(() => {
+                    button.textContent = 'Copier';
+                }, 1500);
+            }).catch(err => {
+                console.error('Erreur de copie: ', err);
+                alert('Échec de la copie. Veuillez copier manuellement.');
+            });
+        }
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.removeAttribute("rel");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
